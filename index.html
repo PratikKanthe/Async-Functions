@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async Function</title>
+  </head>
+  <body>
+    <script>
+      // async function run when its met to the promisse other wise it will wait to met promise and other script will run before it
+      const getdata = async () => {
+        let data = await "Data";
+        console.log(data); // here data return some string  it is not a promise so code will run at the end
+      };
+
+      //commented logs
+      //   console.log(1);
+      //   getdata();
+      //   console.log(2);
+
+      // Async/Await Example
+    </script>
+  </body>
+</html>
