@@ -19,6 +19,21 @@
       //   console.log(2);
 
       // Async/Await Example with Promise
+      function get_data() {
+        let first_promise = new Promise((resolve, reject) =>
+          resolve("Data Loaded ")
+        );
+        let second_promise = new Promise((resolve, reject) => {
+          setTimeout(() => resolve("After 2 Sec"), 2000);
+        });
+        let combined_promise = Promise.all([first_promise, second_promise]);
+        return combined_promise;
+      }
+      async function desplay() {
+        let data = await get_data();
+        console.log(data);
+      }
+      desplay();
     </script>
   </body>
 </html>
